@@ -3,7 +3,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 import java.util.Random;
-import java.util.random.*;
+//import java.util.random.*;
 
 import javax.swing.JPanel;
 
@@ -13,7 +13,7 @@ public class GamePanel extends JPanel implements ActionListener{
 	static final int SCREEN_HEIGHT = 450;
 	static final int UNIT_SIZE = 20;
 	static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/UNIT_SIZE;
-	static final int DELAY =75;
+	static final int DELAY =500;
 	final int x[]= new int[GAME_UNITS];
 	final int y[]= new int[GAME_UNITS];
 	int bodyParts = 6;
@@ -42,6 +42,7 @@ public class GamePanel extends JPanel implements ActionListener{
 	}
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
+		draw(g);
 	}
 	public void draw(Graphics g) {
 		
